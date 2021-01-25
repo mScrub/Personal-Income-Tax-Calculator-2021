@@ -21,9 +21,8 @@ int main()
 	if (income <= 42184)
 	{	// Takes income first, and then applies tax to it, then it does *100/100 to yield proper deducted amount. (Reason being is that the initial input in this first order of condition needs to be it's first value)
 		taxAmt = income * fivePercent;
-		// Then, take inputted amount and multiply it by the tax rate, and you deducted amount. Using inputted amount and subtract the deducted amount to get the net pay. 
+		// Then, using inputted amount and subtract the deducted amount to get the net pay. 
 		income = income - taxAmt;
-		// shows the taxed amount 
 	}
 	else if (income >= 42184.01)
 	{
